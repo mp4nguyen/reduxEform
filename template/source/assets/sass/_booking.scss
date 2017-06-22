@@ -1,0 +1,142 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background: #eaeaea;
+  .booking {
+    height: 100%;
+    .sub-title {
+      min-height: 46px;
+      background-color: #eaeaea;
+      border-top:2px solid #cfcfcf;
+      padding: 10px 0;
+      .btn-sub-title {
+        min-height: 50px;
+        padding: 10px 0;
+        text-align: right;
+        @include breakpoint(767px){
+          text-align: left;
+        }
+      }
+      a {
+        color: #2b4b5a;
+        cursor: pointer;
+      }
+      h2 {
+        font-weight: 200;
+        font-size: 30px;
+        margin: 0px;
+      }
+      @include breakpoint(767px){
+        min-height: 36px;
+      }
+    }
+    .invoice {
+      .page-title {
+        margin-bottom: 52px;
+        @include breakpoint(767px){
+          margin-bottom: 10px;
+        }
+      }
+
+      .price{
+        margin-top: 23px;
+        margin-bottom: 23px;
+        font-size: 30px;
+        color: #028EC8;
+        font-weight: normal;
+        @include breakpoint(767px){
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+      }
+      .table-responsive {
+        margin-top: 40px;
+      }
+    }
+    .section-subtitle {
+      color: #028EC8;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    .section-title h2 {
+      font-size: 21px;
+      padding: 5px 0;
+      .fa-check-circle {
+        color: green;
+        margin-right: 10px;
+      }
+      .fa-search {
+        margin-right: 10px;
+      }
+    }
+
+    /* center */
+    .content-booking {
+      background: #e0eef6;
+      margin: 0 -15px;
+      height: 100%;
+    }
+    .col-left {
+      min-height: 700px;
+      height: 100%;
+      padding: 20px 0px 0 0px;
+      .avatar-doctor {
+        padding: 5%;
+      }
+      .tree-section  {
+        margin-top: 70px;
+        position: relative;
+        left: 25%;
+        text-align: left;
+        height: 280px;
+        .tree-quote {
+          position: absolute;
+          left: 10%;
+        }
+        .tree-quote-1 {
+          top: -2%;
+        }
+        .tree-quote-2 {
+          top: 16.5%;
+        }
+        .tree-quote-3 {
+          top: 35.5%;
+        }
+        .tree-quote-4 {
+          top: 54%;
+        }
+        .tree-quote-5 {
+          top: 73.5%;
+        }
+        .tree-quote-6 {
+          top: 92.5%;
+        }
+      }
+      .tree-section-1 {
+        background: url("../images/booking/tree-1.png") left top no-repeat;
+      }
+    }
+    .col-right {
+      min-height: 700px;
+      background-color: #ffffff;
+      .section-right {
+        padding: 30px 0px;
+        .content-section {
+          padding: 0;
+          padding: 20px 0 50px 0;
+        }
+        .btn-back {
+          float: left;
+        }
+        .emergency {
+          float: right;
+        }
+      }
+      .section-1 {
+        .about-practice {
+          padding: 80px 0 100px 0;
+        }
+      }
+    }
+  }
+}

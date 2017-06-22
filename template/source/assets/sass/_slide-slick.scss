@@ -1,0 +1,145 @@
+/* Slider */
+
+.slider {
+  position: relative;
+  // height: 681px !important;
+  width: 100%;
+  border-bottom: color("green", "base") 4px solid;
+  margin-bottom: 30px; 
+  padding-bottom: 7px;
+  .slick-slide { 
+    height: 676px;
+  }
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    // height: 676px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-dots {
+    width: 100%;
+    max-width: 1140px;
+    margin: -33px auto 0;
+    text-align: right;
+    li {
+        display: inline-block;
+        button {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin-left: 5px;
+            border: color("green", "base") 1px solid;
+            background: none;
+            transition: background-color .3s;
+            border-radius: 50%;
+            text-indent: -9999px;
+            &.active {
+                
+            }
+        }
+        &.slick-active {
+            button {
+                background-color: color("green", "base");
+            }
+        }
+    }
+}

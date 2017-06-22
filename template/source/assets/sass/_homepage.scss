@@ -1,0 +1,349 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background: #eaeaea;
+  .homepage {
+    background: url("../images/homepage/main-bn.jpg") top center no-repeat / 100%;
+    height: 100%;
+    @media (max-width: 736px) {
+      background: url("../images/homepage/main-bn-m.jpg") top center no-repeat / 130%;
+      height: 100%;
+    }
+    .header {
+      background: #eaeaea;
+      height: 5em;
+      margin: 0;
+      padding: 10px 0;
+      @media (max-width: 736px) {
+        background: none;
+      }
+      .logo {
+        padding-top: 5px;
+        img {
+          min-width: 192px;
+          width: 130px;
+          margin-top: 5px;
+        }
+        @media (max-width: 736px) {
+          img {
+            min-width: 160px;
+            width: 160px;
+            margin-left: 0;
+          }
+        }
+      }
+      .login {
+        margin: 15px 0px;
+        @media (max-width: 736px) {
+          margin: 10px 0px;
+        }
+        .btn-login {
+          background: #78c145;
+          border-radius: 0.3em;
+          padding: 15px 10px;
+          color: #fff;
+          @media (max-width: 736px) {
+            padding: 10px;
+          }
+        }
+      }
+      .user-setting {
+        font-family: UTMAvo;
+        font-size: small;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .center {
+      @media (max-width: 736px) {
+        margin-top: 10%;
+      }
+      min-height: 626px;
+      color: white;
+      .title-home {
+        margin-top: 2.77em;
+        color: #fff;
+        font-size: 41px;
+        @media (max-width: 736px) {
+          margin-top: 5%;
+          font-size: 5vh;
+        }
+      }
+      .main-icon {
+        margin-top: 9%;
+        text-align: center;
+        .block-icon:first-child {
+          border-top-left-radius: 0.2em;
+          border-bottom-left-radius: 0.2em;
+        }
+        .block-icon:last-child {
+          border-right: none;
+          border-top-right-radius: 0.2em;
+          border-bottom-right-radius: 0.2em;
+        }
+        .block-icon {
+          background: white;
+          padding: 1.1em 0;
+          width: 16.66667%;
+          float: left;
+          border-right: 2px solid #e5e5e5;
+          a {
+            color: #333;
+            font-size: 16px;
+          }
+          img {
+            margin-bottom: 12px;
+            width: 38px;
+            height: 38px;
+          }
+        }
+        @media (max-width: 736px) {
+          .block-icon {
+            width: 33.3333%;
+          }
+          .block-icon:nth-last-child(6) {
+            border-top-left-radius: 0.2em;
+            border-bottom: 2px solid #e5e5e5;
+            border-bottom-left-radius: 0;
+          }
+          .block-icon:nth-last-child(5) {
+            border-bottom: 2px solid #e5e5e5;
+          }
+          .block-icon:nth-last-child(4) {
+            border-right: none;
+            border-top-right-radius: 0.2em;
+            border-bottom: 2px solid #e5e5e5;
+          }
+          .block-icon:nth-last-child(3) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0.2em;
+          }
+          .block-icon:nth-last-child(1) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0.2em;
+          }
+        }
+      }
+      .box-search {
+        margin-top: -1.7%;
+        h2 {
+          font-size: 27px;
+        }
+      }
+    }
+
+    .footer {
+      font-size: 14px;
+      padding: 20px 0px;
+      background: #eaeaea;
+      min-height: 230px;
+      height: auto;
+      h4 {
+        color: #333333;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+          color: #058ec7;
+          margin-bottom: 12px;
+          h4 {
+            color: #333333;
+          }
+          .copyright {
+            color: #999;
+          }
+        }
+
+        .padding-none {
+          padding-left: none !important;
+          padding-right: none !important;
+        }
+      }
+    }
+  }  /* CSS for Homepage Type */
+
+  .subpage {
+    background-color: white;
+    color: #333;
+    .header {
+      background: #eaeaea;
+      height: 5em;
+      margin: 0;
+      padding: 10px 0;
+      @media (max-width: 736px) {
+        background: none;
+      }
+      .logo {
+        padding-top: 5px;
+        img {
+          min-width: 192px;
+          width: 130px;
+          margin-top: 5px;
+        }
+        @media (max-width: 736px) {
+          img {
+            min-width: 160px;
+            width: 160px;
+            margin-left: 0;
+          }
+        }
+      }
+      .login {
+        margin: 15px 0px;
+        @media (max-width: 736px) {
+          margin: 10px 0px;
+        }
+        .btn-login {
+          background: #78c145;
+          border-radius: 0.3em;
+          padding: 15px 10px;
+          color: #fff;
+          @media (max-width: 736px) {
+            padding: 10px;
+          }
+        }
+      }
+      .user-setting {
+        font-family: UTMAvo;
+        font-size: small;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+    .center {
+      @media (max-width: 736px) {
+        margin-top: 10%;
+      }
+      min-height: 626px;
+      .title-home {
+        margin-top: 2.77em;
+        color: #fff;
+        font-size: 41px;
+        @media (max-width: 736px) {
+          margin-top: 5%;
+          font-size: 5vh;
+        }
+      }
+      .main-icon {
+        margin-top: 9%;
+        text-align: center;
+        .block-icon:first-child {
+          border-top-left-radius: 0.2em;
+          border-bottom-left-radius: 0.2em;
+        }
+        .block-icon:last-child {
+          border-right: none;
+          border-top-right-radius: 0.2em;
+          border-bottom-right-radius: 0.2em;
+        }
+        .block-icon {
+          background: white;
+          padding: 1.1em 0;
+          width: 16.66667%;
+          float: left;
+          border-right: 2px solid #e5e5e5;
+          a {
+            color: #333;
+            font-size: 16px;
+          }
+          img {
+            margin-bottom: 12px;
+            width: 38px;
+            height: 38px;
+          }
+        }
+        @media (max-width: 736px) {
+          .block-icon {
+            width: 33.3333%;
+          }
+          .block-icon:nth-last-child(6) {
+            border-top-left-radius: 0.2em;
+            border-bottom: 2px solid #e5e5e5;
+            border-bottom-left-radius: 0;
+          }
+          .block-icon:nth-last-child(5) {
+            border-bottom: 2px solid #e5e5e5;
+          }
+          .block-icon:nth-last-child(4) {
+            border-right: none;
+            border-top-right-radius: 0.2em;
+            border-bottom: 2px solid #e5e5e5;
+          }
+          .block-icon:nth-last-child(3) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0.2em;
+          }
+          .block-icon:nth-last-child(1) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0.2em;
+          }
+        }
+      }
+      .box-search {
+        margin-top: -1.7%;
+        h2 {
+          font-size: 27px;
+        }
+      }
+    }
+    .footer {
+      font-size: 14px;
+      padding: 20px 0px;
+      background: #eaeaea;
+      min-height: 230px;
+      height: auto;
+      h4 {
+        color: #333333;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+          color: #058ec7;
+          margin-bottom: 12px;
+          h4 {
+            color: #333333;
+          }
+          .copyright {
+            color: #999;
+          }
+        }
+
+        .padding-none {
+          padding-left: none !important;
+          padding-right: none !important;
+        }
+      }
+    }
+  } /* CSS for Subpage Type */
+
+  /* CSS For MOdal */
+  .display-none {
+    display: none;
+  }
+  .title-signup {
+    background-color: $blue;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0px 0px 20px;
+  }
+  .ver-line {
+    height: 100%;
+    background:url("../images/homepage/gray-dot.gif") top center repeat-y;
+    .ver-text {
+      line-height: 297px;
+      span {
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

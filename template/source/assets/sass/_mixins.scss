@@ -1,0 +1,44 @@
+/**
+ * Breakpoint Mixin
+ *
+ * breakpoint mixin
+ * use @include breakpoint(small) { ... }
+ 
+ * or without this use @media only screen and (min-width: 900px) { ... }
+ */
+@mixin breakpoint($point) {
+	@media only screen and (max-width: #{$point}) { @content; }
+}
+
+@mixin between-breakpoints($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+
+// @function calculateRem($size) {
+//   $remSize: $size / 16px;
+//   @return #{$remSize}rem;
+// }
+
+// @mixin fontSize($size) {
+//   font-size: $size; //Fallback in px
+//   font-size: calculateRem($size);
+// }
+
+// Convert px to rem
+
+$baseFontSize : 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+

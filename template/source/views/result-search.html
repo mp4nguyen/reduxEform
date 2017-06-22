@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <title>Result Page - SG Website 2016</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lte IE 9]>
+    <link href='/PATH/TO/FOLDER/css/animations-ie-fix.css' rel='stylesheet'>
+    <![endif]-->
+
+</head>
+
+<body>
+<!-- My Booking -->
+
+<div class="main">
+<div class="subpage result-page">
+<div class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+                <div class="logo"><a href="#"><img src="images/icon/redimed.svg"></a></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6" align="right">
+                <div class="login"><a type="button" data-toggle="dropdown" class="btn-login dropdown-toggle" href="#user-setting">Username</a></div>
+                <ul id="user-setting" class="dropdown-menu user-setting">
+                    <li><a href="my-profile.html"><i class="fa fa-user-o"></i> My Profile</a></li>
+                    <li><a href="mybooking.html"><i class="fa fa-calendar"></i> My Booking</a></li>
+                    <li><a href="#"><i class="fa fa-users"></i> My Organzination</a></li>
+                    <li><a href="#"><i class="fa fa-cogs"></i> Setting</a></li>
+                    <li><a href="#"><i class="fa fa-list-alt"></i> Invoices</a></li>
+                    <hr class="hr-custom">
+                    <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> <!--/header-->
+
+<div class="container-fluid">
+<div class="row page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <h1>My Bookings</h1>
+
+                <nav class="navbar navbar-default navbar-custom hidden-sm hidden-md hidden-lg">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <div class="o-grid__item">
+                                <button class="navbar-toggle collapsed btn-search c-hamburger c-hamburger--htx" type="button" data-toggle="collapse" data-target="#advance-search" aria-expanded="false">
+                                    <span><i class="fa fa-2x fa-search"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="advance-search">
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <label>Keyword:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-lg" placeholder="Keyword">
+                                              <span class="input-group-btn">
+                                                <button class="btn btn-lg btn-primary" type="button"><i class="fa fa-search"></i></button>
+                                              </span>
+                                    </div><!-- /input-group -->
+                                </div>
+                                <hr>
+                                <div class="form-group text-center">
+                                    <label class="small">Advance Search</label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Browser by date:</label>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control input-lg" placeholder="DD/MM/YYYY">
+                                              <span class="input-group-btn">
+                                                <button class="btn btn-lg btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                                              </span>
+                                    </div><!-- /input-group -->
+                                </div>
+                                <div class="form-group">
+                                    <label>Browser by states:</label>
+                                    <select class="form-control input-lg">
+                                        <option>Choose your state</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Browser by location:</label>
+                                    <select class="form-control input-lg">
+                                        <option>Choose your location</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Browser by location:</label>
+                                            <select class="form-control input-lg">
+                                                <option>Choose your location</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                        <label></label>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Bulk Bills
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-lg btn-primary btn-group-justified">
+                                        Find Your Doctor
+                                    </button>
+                                </div>
+                            </form>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="row">
+                <h2 class="section-subtitle text-center text-gray">3 result of search</h2>
+                <div class="block-result">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4" align="center">
+                            <img class="img-responsive img-thumbnail" src="images/booking/avatar.jpg">
+                            <div class="rating text-center">
+                                <h2><span class="label label-success">80%</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <h3 class="doctor-name"><a href="#">John Belmont</a></h3>
+                            <div class="row-address">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <b>Add:</b> 1 Frederick Street, Belmont, WA 6104, Long address
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <a href="#"><i class="fa fa-2x fa-map-marker"></i></a>
+                                        <b>5,43 km</b> away
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-option hidden-xs" align="center">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-dollar"></i><br>
+                                            Bulk Billing</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-mobile"></i><br>
+                                            Telehealth</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-home"></i><br>
+                                            Home Visit</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row hidden-xs">
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="form-group">
+                                        <button class="btn btn-default">4:30 pm</button>
+                                        <button class="btn btn-default">5:30 pm</button>
+                                        <button class="btn btn-default">6:30 pm</button>
+                                        <button class="btn btn-default">7:30 pm</button>
+                                        <button class="btn btn-default">8:30 pm</button>
+                                        <button class="btn btn-default">9:30 pm</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="form-group" align="center">
+                                        <button class="btn btn-lg btn-primary">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="row hidden-lg hidden-md hidden-sm">
+                        <div class="col-xs-12">
+                            <div class="p-10-0" align="right">
+                                <a  type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                                    Time's Booking <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </div>
+                            <div class="collapse" id="collapse1">
+                                <div class="well well-custom"  align="center">
+                                    <div class="row small">
+                                        <div class="col-xs-4" align="center">
+                                            <p><a href="#"><i class="fa fa-2x fa-dollar"></i><br>
+                                                Bulk Billing</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4" align="center">
+                                            <p><a href="#"><i class="fa fa-2x fa-mobile"></i><br>
+                                                Telehealth</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4" align="center">
+                                            <p><a href="#"><i class="fa fa-2x fa-home"></i><br>
+                                                Home Visit</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <button class="btn btn-default">4:30 pm</button>
+                                                <button class="btn btn-default">5:30 pm</button>
+                                                <button class="btn btn-default">6:30 pm</button>
+                                                <button class="btn btn-default">7:30 pm</button>
+                                                <button class="btn btn-default">8:30 pm</button>
+                                                <button class="btn btn-default">9:30 pm</button>
+                                                <button class="btn btn-default">8:30 pm</button>
+                                                <button class="btn btn-default">9:30 pm</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <button class="btn btn-lg btn-primary">Book Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Booking details on Mobile -->
+                </div>  <!-- block result -->
+
+                <div class="block-result">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4" align="center">
+                            <img class="img-responsive img-thumbnail" src="images/booking/avatar.jpg">
+                            <div class="rating text-center">
+                                <h2><span class="label label-success">80%</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <h3 class="doctor-name"><a href="#">John Belmont</a></h3>
+                            <div class="row-address">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <b>Add:</b> 1 Frederick Street, Belmont, WA 6104, Long address
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <a href="#"><i class="fa fa-2x fa-map-marker"></i></a>
+                                        <b>5,43 km</b> away
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-option hidden-xs" align="center">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-dollar"></i><br>
+                                            Bulk Billing</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-mobile"></i><br>
+                                            Telehealth</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-home"></i><br>
+                                            Home Visit</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row hidden-xs">
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="form-group">
+                                        <button class="btn btn-default">4:30 pm</button>
+                                        <button class="btn btn-default">5:30 pm</button>
+                                        <button class="btn btn-default">6:30 pm</button>
+                                        <button class="btn btn-default">7:30 pm</button>
+                                        <button class="btn btn-default">8:30 pm</button>
+                                        <button class="btn btn-default">9:30 pm</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="form-group" align="center">
+                                        <button class="btn btn-lg btn-primary">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="row hidden-lg hidden-md hidden-sm">
+                        <div class="col-xs-12">
+                            <div class="p-10-0" align="right">
+                                <a  type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                                    Time's Booking <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </div>
+                            <div class="collapse" id="collapse2">
+                                <div class="well well-custom"  align="center">
+                                    <div class="row small">
+                                        <div class="col-xs-4" align="center">
+                                            <p><a href="#"><i class="fa fa-2x fa-dollar"></i><br>
+                                                Bulk Billing</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4" align="center">
+                                            <p><a href="#"><i class="fa fa-2x fa-mobile"></i><br>
+                                                Telehealth</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4" align="center">
+                                            <p><a href="#"><i class="fa fa-2x fa-home"></i><br>
+                                                Home Visit</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <button class="btn btn-default">4:30 pm</button>
+                                                <button class="btn btn-default">5:30 pm</button>
+                                                <button class="btn btn-default">6:30 pm</button>
+                                                <button class="btn btn-default">7:30 pm</button>
+                                                <button class="btn btn-default">8:30 pm</button>
+                                                <button class="btn btn-default">9:30 pm</button>
+                                                <button class="btn btn-default">8:30 pm</button>
+                                                <button class="btn btn-default">9:30 pm</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <button class="btn btn-lg btn-primary">Book Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- Booking details on Mobile -->
+                </div>  <!-- block result -->
+
+                <div class="block-result">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4" align="center">
+                            <img class="img-responsive img-thumbnail" src="images/booking/avatar.jpg">
+                            <div class="rating text-center">
+                                <h2><span class="label label-success">80%</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <h3 class="doctor-name"><a href="#">John Belmont</a></h3>
+                            <div class="row-address">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <b>Add:</b> 1 Frederick Street, Belmont, WA 6104, Long address
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <a href="#"><i class="fa fa-2x fa-map-marker"></i></a>
+                                        <b>5,43 km</b> away
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-option hidden-xs">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-dollar"></i><br>
+                                            Bulk Billing</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-mobile"></i><br>
+                                            Telehealth</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-home"></i><br>
+                                            Home Visit</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-9 col-md-9 col-sm-12 hidden-xs">
+                            <div class="form-group">
+                                <button class="btn btn-default">4:30 pm</button>
+                                <button class="btn btn-default">5:30 pm</button>
+                                <button class="btn btn-default">6:30 pm</button>
+                                <button class="btn btn-default">7:30 pm</button>
+                                <button class="btn btn-default">8:30 pm</button>
+                                <button class="btn btn-default">9:30 pm</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 hidden-xs" align="center">
+                            <div class="form-group">
+                                <button class="btn btn-lg btn-primary">Book Now</button>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>  <!-- block result -->
+
+                <div class="block-result">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4" align="center">
+                            <img class="img-responsive img-thumbnail" src="images/booking/avatar.jpg">
+                            <div class="rating text-center">
+                                <h2><span class="label label-success">80%</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <h3 class="doctor-name"><a href="#">John Belmont</a></h3>
+                            <div class="row-address">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <b>Add:</b> 1 Frederick Street, Belmont, WA 6104, Long address
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <a href="#"><i class="fa fa-2x fa-map-marker"></i></a>
+                                        <b>5,43 km</b> away
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-option hidden-xs">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-dollar"></i><br>
+                                            Bulk Billing</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-mobile"></i><br>
+                                            Telehealth</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4" align="center">
+                                        <p><a href="#"><i class="fa fa-2x fa-home"></i><br>
+                                            Home Visit</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-9 col-md-9 col-sm-12 hidden-xs">
+                            <div class="form-group">
+                                <button class="btn btn-default">4:30 pm</button>
+                                <button class="btn btn-default">5:30 pm</button>
+                                <button class="btn btn-default">6:30 pm</button>
+                                <button class="btn btn-default">7:30 pm</button>
+                                <button class="btn btn-default">8:30 pm</button>
+                                <button class="btn btn-default">9:30 pm</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 hidden-xs" align="center">
+                            <div class="form-group">
+                                <button class="btn btn-lg btn-primary">Book Now</button>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>  <!-- block result -->
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+            <div class="filter-col">
+                <div class="form-group">
+                    <label>Keyword:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Keyword">
+                          <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                          </span>
+                    </div><!-- /input-group -->
+                </div>
+                <hr>
+                <div class="form-group text-center">
+                    <label class="small">Advance Search</label>
+                </div>
+                <div class="form-group">
+                    <label>Browser by date:</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control" placeholder="DD/MM/YYYY">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                          </span>
+                    </div><!-- /input-group -->
+                </div>
+                <div class="form-group">
+                    <label>Browser by states:</label>
+                    <select class="form-control">
+                        <option>Choose your state</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Browser by location:</label>
+                    <select class="form-control">
+                        <option>Choose your location</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label>Browser by location:</label>
+                            <select class="form-control">
+                                <option>Choose your location</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <label class="hidden-sm"></label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Bulk Bills
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-group-justified">
+                        Find Your Doctor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div> <!--/center-->
+
+<div class="container-fluid footer hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <p><a href="#"><img src="images/icon/redimed-bw.svg" border="0" width="120" height="30"></a></p>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Joondalup: <b>08 9300 3835</b></li>
+                    <li>Belmont: <b>08 9230 0900</b></li>
+                    <li>Rockingham: <b>08 9527 1585</b></li>
+                    <li><a href="#"><h4>Mobile App</h4></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 column-2">
+                <h4>Commercial</h4>
+                <ul>
+                    <li><a href="#">Health screening and Wellness</a></li>
+                    <li><a href="#">Injury Management</a></li>
+                    <li><a href="#">Medico Legal</a></li>
+                    <li><a href="#">Telehealth Services</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 column-3">
+                <h4>Urgent Injury Care</h4>
+                <ul>
+                    <li><a href="#">General Medical Services</a></li>
+                    <li><a href="#">Allied Health Services</a></li>
+                    <li><a href="#">Surgical Specialists</a></li>
+                    <li>24/7 Emergency</li>
+                </ul>
+            </div>
+            <div align="center" class="col-lg-3 col-md-3 col-sm-3">
+                <p><a href="#"><img src="images/homepage/logo-iso9001-l.png" width="60px" border="0"></a></p>
+                <p class="copyright"><span>© REDIMED 2015</span> - Website Design by Meditek</p>
+            </div>
+        </div>
+    </div>
+</div> <!--/footer-->
+
+
+<!-- Modal -->
+<!-- Modal Booking 1 -->
+<div id="Booking-1-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2 class="time-booking text-primary">09:00 AM</h2>
+                    <h3 class="date-booking text-primary">Sun, Dec 4, 2016</h3>
+                    <p>Patient <i class="fa fa-caret-right"></i> <a href="#"><b>John Tran</b></a></p>
+                    <p>Doctor <i class="fa fa-caret-right"></i> <a href="#"><b>John Tran</b></a></p>
+                    <address>
+                        <strong><abbr title="address">• Address:</abbr></strong><Br>
+                        Redimed Belmont<br>
+                        (Westminster)<br>
+                        Unit 1 Frederick Street, Belmont, WA 6104
+                    </address>
+                    <address>
+                        <strong><abbr title="phone">• Mobile:</abbr> <b class="text-primary">(08) 9230 0900</b></strong>
+                    </address>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-sm input-booking" placeholder="Symptons">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-sm" placeholder="Diagnotics">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-sm" placeholder="Prescriptions">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Next Appointment / Plan"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Note"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success">Update</button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal Booking 2 -->
+<div id="Booking-2-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2 class="time-booking text-primary">09:00 AM</h2>
+                    <h3 class="date-booking text-primary">Sun, Dec 4, 2016</h3>
+                    <p>Patient <i class="fa fa-caret-right"></i> <a href="#"><b>John Tran</b></a></p>
+                    <p>Doctor <i class="fa fa-caret-right"></i> <a href="#"><b>John Tran</b></a></p>
+                    <address>
+                        <strong><abbr title="address">• Address:</abbr></strong><Br>
+                        Redimed Belmont<br>
+                        (Westminster)<br>
+                        Unit 1 Frederick Street, Belmont, WA 6104
+                    </address>
+                    <address>
+                        <strong><abbr title="phone">• Mobile:</abbr> <b class="text-primary">(08) 9230 0900</b></strong>
+                    </address>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div id="map" class="map"></div>
+
+                    <script>
+                        function myMap() {
+                            var mapOptions = {
+                                center: new google.maps.LatLng(51.5, -0.12),
+                                zoom: 10,
+                                mapTypeId: google.maps.MapTypeId.HYBRID
+                            }
+                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                        }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+                    <div align="center"><a class="underline" href="#"><h3>Get Direction</h3></a></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</div>
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/css3-animate-it.js"></script>
+<script src="js/stacktable.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>

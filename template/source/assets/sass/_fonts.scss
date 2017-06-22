@@ -1,0 +1,45 @@
+// @font-face {
+//     font-family: 'proximanova';
+//     src: url('fonts/proximanova-light-webfont.eot');
+//     src: url('fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/proximanova-light-webfont.woff') format('woff'),
+//          url('fonts/proximanova-light-webfont.ttf') format('truetype'),
+//          url('fonts/proximanova-light-webfont.svg#proximanova') format('svg');
+//     font-weight: 300;
+//     font-style: normal;
+
+// }
+
+@font-face {
+    font-family: 'UTMAptima';
+    src: url('fonts/UTMAptima.eot');
+    src: url('../fonts/UTMAptima.eot') format('embedded-opentype'),
+         url('../fonts/UTMAptima.woff') format('woff'),
+         url('../fonts/UTMAptima.ttf') format('truetype'),
+         url('../fonts/UTMAptima.svg#UTMAptima') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo';
+  src: url('../fonts/UTMAvo.eot');
+  src: url('../fonts/UTMAvo.eot') format('embedded-opentype'),
+  url('../fonts/UTMAvo.woff') format('woff'),
+  url('../fonts/UTMAvo.ttf') format('truetype'),
+  url('../fonts/UTMAvo.svg#UTMAvo') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.eot');
+  src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+  url('../fonts/OpenSans.woff') format('woff'),
+  url('../fonts/OpenSans.ttf') format('truetype'),
+  url('../fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+

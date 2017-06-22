@@ -1,0 +1,22 @@
+// @charset 'utf-8';
+
+@import "variables";
+
+// /* Extra imports */
+@import "mixins";
+@import "fonts";
+@import "loading";
+@import "nav";
+@import "magnific";
+@import "slide-slick";
+@import "timeline";
+@import "animation";
+@import "font-awesome-scss/font-awesome";
+
+/* Page's css */
+@import "homepage";
+@import "my-booking";
+@import "booking";
+@import "result-page";
+@import "elements"; /* btn, input style */
+@import "table"; /* btn, input style */

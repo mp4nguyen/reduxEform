@@ -1,0 +1,210 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+  font-size: 14px;
+  color: $normal;
+  font-size: 14px;
+  background: #fff;
+  &.body-sticky {
+    overflow: hidden !important;
+  }
+}
+
+html, body {
+  font-size: 100%;
+  //@include breakpoint(1300px) {
+  //  font-size: 80%;
+  //}
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  outline: none;
+  color: #058ec7;
+}
+
+a:hover {
+  color: #c4094a;
+}
+
+a, button, .button, input.btn {
+  transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -webkit-transition: all .15s ease-in;
+  border-radius: 0!important;
+}
+input, textarea, select, .modal-content {
+  border-radius: 0!important;
+}
+
+a img {
+  border: none;
+}
+
+.hide {
+  display: none
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* mac hide \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+*:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  line-height: normal
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* centered columns styles */
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  //margin-right: -4px;
+}
+
+.btn-lg-custom {
+  padding: 17px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 6px;
+} /* use for homepage */
+
+.input-lg-custom {
+  height: 60px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 6px;
+}  /* use for homepage */
+
+.hr-custom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.transperant-search {
+  background: none;
+  border: none;
+}
+.m-20-0 {
+  margin: 20px 0;
+}
+.p-10-0 {
+  padding: 10px 0;
+}
+.text-left {
+  text-align: left!important;
+}
+.text-white {
+  color: $white!important;
+}
+.text-gray {
+  color: #ccc;
+}
+.nopadding {
+  padding: 0px !important;
+}
+.nomargin {
+  margin: 0px !important;
+}
+
+
+/* animation button */
+
+/**
+ * Style 2
+ *
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+
